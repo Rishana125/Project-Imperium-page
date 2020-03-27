@@ -9,16 +9,16 @@ const NavBar = () => {
         <Navbar fixed="top" bg="primary" variant="primary" className="h6">
             <Navbar.Brand>Project Imperium</Navbar.Brand>
             <Nav className="mr-auto">
-                {links.map(key =>
-                    <Nav.Link>
+                {links.map(value =>
+                    <Nav.Link key={value}>
                         <Link
                             activeClass="active"
-                            to={key}
+                            to={value}
                             spy={true}
                             smooth={true}
                             offset={-70}
                             duration= {500}>
-                            {window.capitalize(key)}
+                            {window.capitalize(value)}
                         </Link>
                     </Nav.Link>
                 )}

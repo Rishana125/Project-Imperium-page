@@ -46,14 +46,15 @@ const Comments = (props) => {
                   <p>No comments yet.</p>
                 }
                 <ListGroup as="ul">
-                    { props.data.state.items.map((key, index) =>
+                    { props.data.state.items.map((item, index) =>
                         <ListGroup.Item
+                            key={index}
                             as="li"
                             className={themes[index % themes.length]}
                             disabled>
-                                <h5>{key.name} sends:</h5>
-                                <p>{key.comment}</p>
-                                <h6>{key.date}</h6>
+                                <h5>{item.name} sends:</h5>
+                                <p>{item.comment}</p>
+                                <h6>{item.date}</h6>
                         </ListGroup.Item>
                     )}
                 </ListGroup>

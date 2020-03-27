@@ -42,13 +42,14 @@ const Links = () => {
             <h3>Links</h3>
             <Tabs defaultActiveKey="project" id="uncontrolled-tab-example">
                 {tabs.map(tab =>
-                    <Tab eventKey={tab.key} title={window.capitalize(tab.key)}>
+                    <Tab key={tab.key} eventKey={tab.key} title={window.capitalize(tab.key)}>
                         <ButtonGroup className="mt-3">
-                            {tab.container.map((key, index) =>
+                            {tab.container.map((value, index) =>
                                 <Button
-                                    href={key.link}
+                                    key={value.link}
+                                    href={value.link}
                                     variant={themes[index]}>
-                                    {key.text}
+                                    {value.text}
                                 </Button>
                             )}
                         </ButtonGroup>

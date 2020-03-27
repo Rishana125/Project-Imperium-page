@@ -28,7 +28,7 @@ const Developing = () => {
                     </p>
                     <ul>
                         {taskList.map(value =>
-                            <li>{value}</li>
+                            <li key={value}>{value}</li>
                         )}
                     </ul>
                     <p className="mt-4">

@@ -37,6 +37,7 @@ const Info = () => {
                     <Image src={msImg}
                            width="100%"
                            height="100%"
+                           style={{objectFit: 'contain'}}
                            rounded/>
                 </Col>
             </Row>

@@ -13,14 +13,14 @@ const Pictures = () => {
 
     return (
         <Carousel className="shadow-lg">
-                {items.map(key =>
-                    <Carousel.Item>
-                        <Image src={key.img}
+                {items.map(value =>
+                    <Carousel.Item key={value.title}>
+                        <Image src={value.img}
                             className="w-100"
                             rounded/>
                         <Carousel.Caption>
-                            <h3 className="text-success">{key.title}</h3>
-                            <p>{key.text}</p>
+                            <h3 className="text-success">{value.title}</h3>
+                            <p>{value.text}</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 )}

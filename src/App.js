@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import './Navbar'
 import NavBar from './Navbar';
 import Overview from './Overview';
@@ -34,12 +33,11 @@ export default class App extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        let date = new Date();
         const itemsRef = firebase.database().ref('items');
         const item = {
             name: this.state.name,
             comment: this.state.comment,
-            date: `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`
+            date: new Date().toDateString()
         };
         itemsRef.push(item);
         this.setState({
@@ -55,13 +53,14 @@ export default class App extends React.Component {
             let items = snapshot.val();
             let newState = [];
 
-            for (let item in items) {
+            Object.keys(items).forEach(item => {
                 newState.push({
                     date: items[item].date,
                     name: items[item].name,
                     comment: items[item].comment
                 });
-            }
+            });
+
             newState.reverse();
             this.setState({
                 items: newState
