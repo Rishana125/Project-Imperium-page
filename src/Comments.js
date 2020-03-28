@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, Button, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Form, Button, ListGroup} from 'react-bootstrap';
 
 const Comments = (props) => {
     const themes = [
