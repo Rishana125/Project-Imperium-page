@@ -7,10 +7,12 @@ const Developing = () => {
         'Improve standard movement system',
         'Upload new animations',
         'Create map prototypes',
-        'Add fireball casting',
-        'Create target lock mode',
-        'Create menus',
-        'Add interface prototype and character characteristics'
+        'Create many different spells',
+        'Add visual effects for spells',
+        'Add interface and character characteristics',
+        'Create AI enemies',
+        'Add target lock mode',
+        'Create menus'
     ];
 
     return (
@@ -20,7 +22,7 @@ const Developing = () => {
             </Col>
             <Col>
                 <h2>Developing</h2>
-                <div className="mt-3">
+                <div className="mt-2">
                     <p>
                         We're using <a href="https://www.unrealengine.com/en-US/">Unreal Engine 4</a> for
                         developing.
@@ -31,7 +33,7 @@ const Developing = () => {
                             <li key={value}>{value}</li>
                         )}
                     </ul>
-                    <p className="mt-4">
+                    <p className="mt-2">
                         This project is the first big game we've ever developed.
                         We really love this project. Each of us contributed a part of
                         ourselves to this game.

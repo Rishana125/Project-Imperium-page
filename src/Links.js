@@ -6,7 +6,8 @@ const Links = () => {
         {text: 'GitLab repository', link: 'https://gitlab.com/takaiten/project-imperium'},
         {text: 'Presentation: Intro', link: 'https://docs.google.com/presentation/d/12FUVSExC5QGYozxge5DMy_sBHt-ezpqJ8HelOCKu2-I/edit#slide=id.p'},
         {text: 'Presentation: Project Overview', link: 'https://docs.google.com/presentation/d/1Bch2eglbFGgzGdE3zWrK4gw7veFn5dM6kJ1MDqG6BGM/edit#slide=id.p'},
-        {text: 'Presentation: Dodge System', link: 'https://docs.google.com/presentation/d/1gxk672klfgfF_u5oN3kOLM8AQsau1dO6FtguCN016R4/edit#slide=id.p'}
+        {text: 'Presentation: Dodge System', link: 'https://docs.google.com/presentation/d/1gxk672klfgfF_u5oN3kOLM8AQsau1dO6FtguCN016R4/edit#slide=id.p'},
+        {text: 'Video presentation', link: 'https://www.youtube.com/watch?v=okTtACHxajU'}
     ];
 
     const developers = [
@@ -19,6 +20,8 @@ const Links = () => {
 
     const materials = [
         {text: 'Unreal Engine 4', link: 'https://www.unrealengine.com/en-US/'},
+        {text: 'Quixel Bridge', link: 'https://quixel.com/bridge'},
+        {text: 'Quixel Mixer', link: 'https://quixel.com/mixer'},
         {text: 'Adobe Mixamo', link: 'https://www.mixamo.com/#/'},
         {text:'Cascadeur', link: 'https://cascadeur.com/'}
     ];

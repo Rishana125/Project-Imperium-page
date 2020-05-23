@@ -19,7 +19,7 @@ const Pictures = () => {
                             className="w-100"
                             rounded/>
                         <Carousel.Caption>
-                            <h3 className="text-success">{value.title}</h3>
+                            <h3 className="text-info">{value.title}</h3>
                             <p>{value.text}</p>
                         </Carousel.Caption>
                     </Carousel.Item>

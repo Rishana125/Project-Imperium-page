@@ -19,7 +19,8 @@ const Info = () => {
                             <p>
                                 Our magic system will contain different types of magic.<br/>
                                 Main magic: pure, dark and white.<br/>
-                                Elemental magic: fire, water and wind.<br/>
+                                Elemental magic: fire, water and wind<br/>
+                                (also volcanic, ice and lightning).
                             </p>
                         </Col>
                     </Row>
